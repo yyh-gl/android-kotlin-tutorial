@@ -24,14 +24,13 @@ class MainActivity : AppCompatActivity() {
             greeting = "こんばんは"
         }
 
-        greeting += "ねむれませんか？"                  //追加
+        greeting += "ねむれませんか？"
 
         textview.text = greeting
 
-        rootLayout.setOnClickListener {             //追加
-            sheepCount++                            //追加
-            val sheepText = "ひつじが$sheepCount 匹"  //追加
-            textview.text = sheepText               //追加
-        }                                           //追加
+        button.setOnClickListener {
+            val sheepText = "ひつじが${++sheepCount}匹"
+            textview.text = sheepText
+        }
     }
 }
