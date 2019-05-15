@@ -6,12 +6,8 @@ import android.view.View
 import android.widget.Toast
 import android.widget.TextView
 
-
-
-
-
 class MainActivity : AppCompatActivity() {
-    var mCount : Int = 0
+    var mCount: Int = 0
     private var mShowCount: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     fun countUp(view: View) {
         ++mCount
-        mShowCount!!.setText(Integer.toString(mCount))
+        mShowCount!!.text = mCount.toString()
     }
 }
