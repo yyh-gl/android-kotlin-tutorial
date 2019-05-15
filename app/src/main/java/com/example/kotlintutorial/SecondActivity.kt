@@ -23,13 +23,12 @@ class SecondActivity : AppCompatActivity() {
         textView?.text = message
 
         mReply = findViewById(R.id.editText_second)
-
     }
 
     fun returnReply(view: View) {
         val reply = mReply?.text.toString()
         val replyIntent = Intent()
-        replyIntent.putExtra(MainActivity.EXTRA_REPLY, reply)
+        replyIntent.putExtra(EXTRA_REPLY, reply)
         setResult(RESULT_OK, replyIntent)
         finish()
     }
