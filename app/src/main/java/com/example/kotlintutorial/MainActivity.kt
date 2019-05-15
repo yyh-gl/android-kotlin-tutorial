@@ -39,10 +39,11 @@ class MainActivity : AppCompatActivity() {
         mReplyTextView = findViewById(R.id.text_message_reply)
     }
 
+    // startActivityForResult() を使って遷移した先から
+    // result が返ってきたときに発火
     public override fun onActivityResult(requestCode: Int,
                                          resultCode: Int,
                                          data: Intent?) {
-
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == TEXT_REQUEST) {
             if (resultCode == RESULT_OK) {
@@ -61,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         val message = mMessageEditText?.text.toString()
         intent.putExtra(EXTRA_MESSAGE, message)
 
+        // 終わったら result 返してねっていうお願い付きの activity遷移
         startActivityForResult(intent, TEXT_REQUEST)
     }
 
