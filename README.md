@@ -2,9 +2,9 @@
 # Androidアプリ開発 by Kotlin
 
 下記2つの資料をもとに勉強
-（-> で記すのは対応ブランチ名）
+各コースのコードはブランチで管理
 
-- https://qiita.com/TomiGie/items/fb60a80780689b86dc59 -> masterブランチ
+- https://qiita.com/TomiGie/items/fb60a80780689b86dc59
 
-- https://codelabs.developers.google.com/android-training/ -> master以外の各ブランチ
+- https://codelabs.developers.google.com/android-training/
 
