@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(EXTRA_MESSAGE, message)
 
         // 終わったら result 返してねっていうお願い付きの activity遷移
+        // TEXT_REQUEST でどのリクエストなのか区別する
         startActivityForResult(intent, TEXT_REQUEST)
     }
 
